@@ -1,0 +1,328 @@
+// Widget: Extended Navigation
+
+// Reset Editor aligning
+div.widget.extendednavigation .extendednavigation ul.align-right, div.widget.extendednavigation .extendednavigation ul.align-right,
+div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.extendednavigation .extendednavigation ul.align-left {
+	float: none !important;
+}
+
+
+
+
+// Nav
+.widget.extendednavigation {
+	@media @tablet {
+		min-height: 46px;
+		width: 100%;
+		margin-top: 16px;
+	}
+	@media @mobile {
+		min-height: 40px;
+	}
+
+	
+
+	.extendednavigation {
+		font-size: 0;
+		@media @tablet {
+			// BS reset
+			padding-top: 0;
+		}
+
+		& > ul {
+			// Removes spaces between inline items
+			font-size: 0;
+
+			@media @mobile {
+				padding-top: 40px;
+			}
+
+			@media @tablet {
+				display: none;
+				-webkit-transition: 		all 0.25s ease;
+				-moz-transition: 			all 0.25s ease;
+				-o-transition: 				all 0.25s ease;
+				transition: 				all 0.25s ease;
+				z-index: 2000;
+				-webkit-transform: 			rotateX(90deg);
+				-moz-transform: 			rotateX(90deg);
+				-o-transform: 				rotateX(90deg);
+				-ms-transform: 				rotateX(90deg);
+				transform: 					rotateX(90deg);
+				-webkit-transform-origin: 	0% 0%;
+				-moz-transform-origin: 		0% 0%;
+				-o-transform-origin: 		0% 0%;
+				-ms-transform-origin: 		0% 0%;
+				transform-origin: 			0% 0%;
+				padding-top: 48px;
+			}
+
+			li {
+				@media @tablet {
+					padding: 0;
+					border-bottom: 1px solid @color-swatch2;
+					&:last-of-type {
+						border-bottom: none;
+					}
+				}
+			}
+			
+
+			&.align-left li {
+				margin-right: 2em;
+			}
+			&.align-right li {
+				margin-left: 2em;
+			}
+			&.align-center li {
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+		}
+		& > ul.open {
+			@media @tablet {
+				
+				display: block;
+				background: fade(@color-swatch1, 92%);
+
+				-webkit-transform: rotateX(0deg);
+				-moz-transform: rotateX(0deg);
+				-o-transform: rotateX(0deg);
+				-ms-transform: rotateX(0deg);
+				transform: rotateX(0deg);
+			}
+		}
+		& > ul > li {
+			display: inline-block;
+		}
+	}
+
+
+	// ---- Menu Item
+	ul li, ul li.folder {
+		position: relative;
+		white-space: normal;
+
+		
+		// Item Text
+		& > .text, a .text {
+			padding: 16px 0;
+			color: @color-swatch6;
+			display: inline-block;
+			position: relative;
+
+			@media @tablet {
+				padding: 16px 10px;
+			}
+
+			@media @mobile {
+				font-size: (@font-swatch6-font-size * 0.8);
+			}
+
+			&:hover {
+				color: @color-swatch2;
+			}
+		}
+
+		&.selected > a > .text {
+			color: @color-swatch2;
+
+			&:after {
+				border-color: @color-swatch2 transparent transparent transparent;
+			}
+
+			&:hover {
+				color: @color-swatch2;
+				&:after {
+					border-color: @color-swatch2 transparent transparent transparent;
+				}
+			}
+		}
+
+		// Link
+		a {
+			position: relative;
+			padding: 0;
+			color: @color-swatch6;
+		
+		}
+	}
+
+
+	// ---- Folder item
+	ul li.folder {
+		
+		margin-right: 0;
+		ul {
+			opacity: 0;
+			display: block;
+			-webkit-transition: all 0.25s ease-in-out;
+			-moz-transition: all 0.25s ease-in-out;
+			-o-transition: all 0.25s ease-in-out;
+			transition: all 0.25s ease-in-out;
+			min-width: 100%;
+			max-width: 300px;
+			z-index: 2000;
+			margin: 0 0 5px 0;
+			position: absolute;
+			display: block;
+			background-color: fade(@color-swatch1, 75%);
+			padding: 0 !important;
+			@media @tablet {
+				position: relative;
+				display: none;
+			}
+			li {
+				@media @tablet {
+					border-bottom: 1px solid fade(@color-swatch2, 30%);
+				}
+			}
+		}
+
+		&:hover > .text {
+			color: @color-swatch2;
+			background-color: transparent;
+			cursor: default;
+			&:after {
+				border-color: @color-swatch2 transparent transparent transparent;
+			}
+		}
+
+		&.selected > .text {
+			background-color: transparent;
+			color: @color-swatch2;
+			&:after {
+				border-color: @color-swatch2 transparent transparent transparent;
+			}
+		}
+
+		// Arrow Icon
+		&:after {
+			// Hiding BS icon
+			display: none;
+		}
+
+		ul li .text {
+			font-size: (@font-swatch6-font-size * 0.86);
+			padding: 0.6em 30px;
+			display: block;
+			@media @mobile {
+				font-size: (@font-swatch6-font-size * 0.78);
+			}
+			&:before {
+				display: none;
+			}
+		}
+
+		// Custom Drop Down icon
+		& > .text:after {
+			display: inline-block;
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 7px 5.5px 0 5.5px;
+			border-color: @color-swatch6 transparent transparent transparent;
+			margin-left: 0.5em;
+			position: relative;
+			top: -3px;
+		}
+
+		&:hover > .text:after {
+			border-color: @color-swatch2 transparent transparent transparent;	
+		}
+	}
+
+	// ---- Open folder
+	ul li:hover ul {
+		opacity: 1;
+		@media @tablet {
+			display: block;
+		}
+
+		li {
+			background-color: fade(@color-swatch1, 40%);
+			margin-bottom: 2px;
+			display: block;
+			width: 100%;
+			float: none;
+		}
+	}
+
+
+	// ---- Collapsible nav
+	
+	// Trigger Icon: Hamburger
+	a.pull {
+		// Dessktop
+	    display: none;
+	    @media @tablet {
+	        display: block;
+	        width: 46px;
+	        height: 46px;
+	        box-shadow: inset 0px 0px 0px 3px @color-swatch3;
+			background: transparent;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 2000;
+	        &:hover {
+	           cursor: pointer;
+	           box-shadow: inset 0px 0px 0px 5px lighten(@color-swatch3, 50%);
+	        }
+	        // Hamburger Bun and Meat
+	        &:after, &:before {
+	            content: '';
+	            position: absolute;
+	            width: 26px;
+	            height: 3px;
+	            background: @color-swatch5;
+	            top: 15px;
+	            left: 50%;
+	            margin: 0 0 0 -13px;
+	            box-shadow: 0 6px 0 @color-swatch5, 0 12px 0 @color-swatch5;
+	        }
+	        &:before {
+	        }
+        }
+        @media @mobile {
+        	width: 40px;
+        	height: 40px;
+        	&:after, &:before {
+	            top: 13px;
+	        }
+        }
+    }
+}
+
+// Trigger Icon: Cross
+.widget.extendednavigation {
+	ul.open + a.pull {
+		@media @tablet {
+    	 	// Cross lines
+    	 	background: transparent;
+
+    	 	&:after, &:before {
+    	 		  box-shadow: none;
+    	 		  margin: 5px 0 0 -13px;
+    	 	}
+    	 	// Cross Line 1
+    	 	&:after {
+	            -webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+    	 	}
+    	 	// Cross Line 2
+    	 	&:before {
+    	 		display: block;
+	            -webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+    	 	}
+    	}
+	}
+}

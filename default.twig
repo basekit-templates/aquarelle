@@ -1,0 +1,14 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+<div class="pt-default">	
+	<div class="page_content">
+		<div class="zone-content clearfix">
+			<div class="page_title">
+				<h1><span>{{ page.title }}</span></h1>
+			</div>
+			{{zone('main')|raw}}
+		</div>
+	</div>
+</div>
+{% endblock content %}
