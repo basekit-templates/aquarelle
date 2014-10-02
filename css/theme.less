@@ -173,7 +173,7 @@ body {
 
 
 .company {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .widget.logo {
@@ -243,6 +243,9 @@ body {
 	.widget.companyname {
 		padding: 0;
 		margin-bottom: 30px;
+		@media @mobile {
+			margin-bottom: 15px;
+		}
 		a {
 			.w_vertical_spacing;
 			.w_horizontal_spacing;
@@ -251,10 +254,47 @@ body {
 			color: @color-swatch1;
 			font-size: @font-swatch5-font-size;
 			line-height: @font-swatch5-line-height;
+			@media @mobile {
+				font-size: (@font-swatch5-font-size * 0.8);
+				line-height: (@font-swatch5-line-height * 0.8);
+			}
 		}
 	}
 
 	.profile_widgets {
+		// Flex parent
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-direction: normal;
+		-moz-box-direction: normal;
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-box-pack: start;
+		-moz-box-pack: start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-webkit-align-content: flex-start;
+		-ms-flex-line-pack: start;
+		align-content: flex-start;
+		-webkit-box-align: stretch;
+		-moz-box-align: stretch;
+		-webkit-align-items: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		@media @tablet {
+			display: block;
+		}
+
 		.widget.profile {
 			.clearfix;
 			.w_vertical_spacing;
@@ -274,6 +314,9 @@ body {
 				&:last-child {
 					margin-bottom: 0;
 				}
+			}
+			@media @mobile {
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -295,6 +338,11 @@ body {
 		text-align: left;
 		display: block;
 		padding-bottom: 30px;
+		padding-top: 30px;
+		@media @mobile {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 	}
 	h2 {
 		padding: 0;
@@ -322,6 +370,7 @@ body {
 		@media @mobile {
 			font-size: (@font-swatch9-font-size * 0.5);
 			line-height: (@font-swatch9-line-height * 0.5);
+			margin-bottom: 10px;
 		}
 		span {
 			.w_horizontal_spacing;
