@@ -4,7 +4,7 @@
 	"templateType":"standard",
 	"pageTypes": ["home"], 
 	"tags": {
-		"en": ["dark", "inverted", "security", "rescue", "protection", "guard"]
+		"en": ["dark", "inverted", "art", "gallery", "exhibition", "event", "artistic", "design", "contrast"]
 	},
 	"images":[
         "images/default-image.jpg"
