@@ -42,6 +42,24 @@ body {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+
+    min-height: 100%;
+}
+
+.pt-default, .pt-home {
+	-webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
 }
 
 .widget.extendednavigation .bk-overlay {
@@ -49,7 +67,7 @@ body {
 	width: auto;
 }
 
-.zone-content, .widget.feature, .header, .footer .content_wrapper {
+.zone-content, .widget.feature .content, .header, .footer .content_wrapper {
 	.w_horizontal_spacing;
 	max-width: 1215px;
 	width: 100%;
@@ -57,7 +75,9 @@ body {
 
 }
 
-
+.pt-default {
+	margin-top: 16px;
+}
 
 
 
