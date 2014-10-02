@@ -21,40 +21,40 @@
             "color7":"#F06200"
         },
         "Swatch 2": {
-            "color1":"#2C2D2E",
-            "color2":"#1A1C20",
-            "color3":"#00B1F0",
+            "color1":"#000000",
+            "color2":"#85F0AF",
+            "color3":"#8FE2FF",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#00B1F0",
-            "color7":"#00B1F0"
+            "color6":"#ffffff",
+            "color7":"#F06200"
         },
         "Swatch 3": {
-            "color1":"#5F5956",
-            "color2":"#302E2D",
-            "color3":"#F09300",
+			"color1":"#222222",
+            "color2":"#A0E1EC",
+            "color3":"#FFF771",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#F09300",
-            "color7":"#F09300"
+            "color6":"#ffffff",
+            "color7":"#F06200"
         },
         "Swatch 4": {
-            "color1":"#3F3833",
-            "color2":"#2B2623",
-            "color3":"#03E878",
+            "color1":"#000000",
+            "color2":"#B4CBCF",
+            "color3":"#99EA9E",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#03E878",
-            "color7":"#03E878"
+            "color6":"#ffffff",
+            "color7":"#F06200"
         },
         "Swatch 5": {
-          	"color1":"#5A5652",
-            "color2":"#43403C",
-            "color3":"#B0C401",
+          	"color1":"#000000",
+            "color2":"#F48686",
+            "color3":"#ADDDE7",
             "color4":"#ffffff",
             "color5":"#ffffff",
-            "color6":"#B0C401",
-            "color7":"#B0C401"
+            "color6":"#ffffff",
+            "color7":"#F06200"
         }
 	},
 	"fontSwatch": {
@@ -75,7 +75,7 @@
 			"font-weight": "400",
 			"line-height": "66px",
 			"color": "@color-swatch4",
-			"background-color": "lighten(@color-swatch1, 15%)",
+			"background-color": "@color-swatch1",
 			"background-color-hover": "@color-swatch2",
 			"letter-spacing": "inherit"
 		},
