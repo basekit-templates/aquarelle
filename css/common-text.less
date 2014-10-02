@@ -6,22 +6,31 @@
 h1 {
 	@media @tablet {
 		font-size: (@font-swatch1-font-size * 0.85);
-		line-height: (@font-swatch1-line-height * 0.85);
+		line-height: (@font-swatch1-line-height * 0.76);
 	}
 	@media @mobile {
 		font-size: (@font-swatch1-font-size * 0.75);
-		line-height: (@font-swatch1-line-height * 0.75);
+		line-height: (@font-swatch1-line-height * 0.64);
+	}
+	.columns-four-first &,
+	.columns-four-second &,
+	.columns-four-third &,
+	.columns-four-fourth & {
+		@media @desktop {
+			font-size: (@font-swatch1-font-size * 0.75);
+			line-height: (@font-swatch1-line-height * 0.66);
+		}
 	}
 }
 
 h2 {
 	@media @tablet {
 		font-size: (@font-swatch2-font-size * 0.9);
-		line-height: (@font-swatch2-line-height * 0.9);
+		line-height: (@font-swatch2-line-height * 0.78);
 	}
 	@media @mobile {
 		font-size: (@font-swatch2-font-size * 0.8);
-		line-height: (@font-swatch2-line-height * 0.8);
+		line-height: (@font-swatch2-line-height * 0.7);
 	}
 }
 
