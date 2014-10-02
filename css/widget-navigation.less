@@ -11,6 +11,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 
 // Nav
 .widget.extendednavigation {
+	padding: 16px 0;
 	@media @tablet {
 		min-height: 46px;
 		width: 100%;
@@ -106,7 +107,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		
 		// Item Text
 		& > .text, a .text {
-			padding: 16px 0;
+			padding: 0;
 			color: @color-swatch6;
 			display: inline-block;
 			position: relative;
@@ -116,6 +117,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 			}
 
 			@media @mobile {
+				padding: 10px 10px;
 				font-size: (@font-swatch6-font-size * 0.8);
 			}
 
