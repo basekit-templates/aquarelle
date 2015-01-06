@@ -21,7 +21,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		min-height: 50px;
 	}
 
-	
+
 
 	.extendednavigation {
 		font-size: 0;
@@ -67,7 +67,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 					}
 				}
 			}
-			
+
 
 			&.align-left li {
 				margin-right: 2em;
@@ -82,7 +82,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		}
 		& > ul.open {
 			@media @tablet {
-				
+
 				display: block;
 				background: fade(@color-swatch1, 92%);
 
@@ -104,7 +104,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		position: relative;
 		white-space: normal;
 
-		
+
 		// Item Text
 		& > .text, a .text {
 			padding: 0;
@@ -146,14 +146,14 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 			position: relative;
 			padding: 0;
 			color: @color-swatch6;
-		
+
 		}
 	}
 
 
 	// ---- Folder item
 	ul li.folder {
-		
+
 		margin-right: 0;
 		ul {
 			opacity: 0;
@@ -162,7 +162,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 			-moz-transition: all 0.25s ease-in-out;
 			-o-transition: all 0.25s ease-in-out;
 			transition: all 0.25s ease-in-out;
-			min-width: 100%;
+			min-width: 150px;
 			max-width: 300px;
 			z-index: 2000;
 			margin: 0 0 5px 0;
@@ -206,7 +206,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 
 		ul li .text {
 			font-size: (@font-swatch6-font-size * 0.86);
-			padding: 0.6em 30px;
+			padding: 0.6em 10px;
 			display: block;
 			@media @mobile {
 				font-size: (@font-swatch6-font-size * 0.78);
@@ -231,7 +231,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 		}
 
 		&:hover > .text:after {
-			border-color: @color-swatch2 transparent transparent transparent;	
+			border-color: @color-swatch2 transparent transparent transparent;
 		}
 	}
 
@@ -253,7 +253,7 @@ div.widget.extendednavigation .extendednavigation ul.align-left, div.widget.exte
 
 
 	// ---- Collapsible nav
-	
+
 	// Trigger Icon: Hamburger
 	a.pull {
 		// Dessktop
