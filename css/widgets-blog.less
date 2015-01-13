@@ -324,14 +324,15 @@
 				border-top: 2px solid @color-swatch2;
 				margin-bottom: 2em;
 				padding: 0.6em 0;
-
 				display: block;
 				font-size: (@font-swatch4-font-size);
 				font-family: @font-swatch1-font-family;
-				position: absolute;
+				position: relative;
 				right: 0;
 				top: 0;
-				width: 28%;
+				width: auto;
+
+				
 				
 				@media @bp-blog-compact {
 					position: relative;
@@ -449,4 +450,9 @@
 			}
 		}
 	}
+}
+
+.widget.blogpost .blog-post-item.has-image .blog-post-metadata .blog-post-publish-date {
+	position: absolute;
+	width: 28%;
 }
