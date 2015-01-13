@@ -68,22 +68,28 @@
 .widget.tweet a,
 .widget.dropbox button,
 .widget.clicktocall a {
+	padding: 0 1.6em;
 	padding-left: 60px;
-	background-position: 26px center;
+	background-position: 12px center;
+	background-size: 40px;
 	@media @mobile {
-		padding-left: 50px;
-		background-position: 16px center;
+		padding-left: 30px;
+		background-position: 4px center;
+		background-size: 26px;
 	}
 	&:hover {
+		padding: 0 1.6em;
 		padding-left: 60px;
-		background-position: 26px center;
+		background-position: 12px center;
 		@media @mobile {
-			padding-left: 50px;
-			background-position: 16px center;
+			padding-left: 30px;
+			background-position: 4px center;
+			background-size: 26px;
 		}
 	}
 }
 
+/*
 .widget.paypalbuynow .widget.button.paypal,
 .widget.paypalbuynow .widget.button.paypal:hover,
 .widget.tweet a,
@@ -93,6 +99,7 @@
 	background-size: 40px;
 	background-position: 13px 4px;
 }
+*/
 
 .widget.paypalbuynow .widget.button.paypal,
 .widget.paypalbuynow .widget.button.paypal:hover {
@@ -107,6 +114,13 @@
 .widget.dropbox button,
 .widget.dropbox button:hover {
 	background-image: image('/images/ico_s_dropbox.png');
+}
+
+.widget.clicktocall a,
+.widget.clicktocall a:hover {
+	background-image: image('/images/ico-tel.png');
+	background-size: 15px;
+	background-position: 11px center;
 }
 
 // Text Inputs
