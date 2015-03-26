@@ -42,7 +42,7 @@
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	box-shadow: inset 0px 0px 0px 3px @color-swatch3;
-	line-height: (@font-swatch7-font-size * 3);
+	line-height: bkscale(@font-swatch7-font-size, 3);
 	-webkit-transition: all 0.1s linear;
 	-moz-transition: all 0.1s linear;
 	-o-transition: all 0.1s linear;
@@ -51,8 +51,8 @@
 
 	@media only screen and (max-width : 460px) {
 		padding: 0 1.2em;
-		font-size: (@font-swatch7-font-size * 0.75);
-		line-height: (@font-swatch7-font-size * 2);
+		font-size: bkscale(@font-swatch7-font-size, 0.75);
+		line-height: bkscale(@font-swatch7-font-size, 2);
 	}
 
 	&:hover {
@@ -139,17 +139,17 @@
 	border: none;
 	border-radius: 0;
 	text-indent: 0;
-	height: (@font-swatch7-font-size * 3 );
-	line-height: (@font-swatch7-font-size * 3 );
+	height: bkscale(@font-swatch7-font-size, 3 );
+	line-height: bkscale(@font-swatch7-font-size, 3 );
 	color: @color-swatch5;
 	margin: 0;
 	box-shadow: inset 0px 0px 0px 2px @color-swatch2;
 	-webkit-appearance: none;
 
 	@media only screen and (max-width : 460px) {
-		font-size: (@font-swatch7-font-size * 0.75);
-		height: (@font-swatch7-font-size * 2);
-		line-height: (@font-swatch7-font-size * 2);
+		font-size: bkscale(@font-swatch7-font-size, 0.75);
+		height: bkscale(@font-swatch7-font-size, 2);
+		line-height: bkscale(@font-swatch7-font-size, 2);
 	}
 
 	&:focus {
@@ -158,11 +158,11 @@
 }
 
 .contactform textarea {
-	line-height: (@font-swatch7-line-height * 0.7);
+	line-height: bkscale(@font-swatch7-line-height, 0.7);
 	min-height: 10em;
 	@media only screen and (max-width : 460px) {
 		border-radius: 0;
-		line-height: (@font-swatch7-line-height * 0.5);
+		line-height: bkscale(@font-swatch7-line-height, 0.5);
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 	}
@@ -175,7 +175,7 @@
 .widget.ecomcheckout .delivery label,
 .ecom-product-vartitle {
     font-family: @font-swatch4-font-family;
-    font-size: (@font-swatch5-font-size * 0.8);
+    font-size: bkscale(@font-swatch5-font-size, 0.8);
     font-weight: @font-swatch4-font-weight;
     line-height: @font-swatch4-line-height;
     color: @color-swatch4;
@@ -185,8 +185,8 @@
     float: none;
 
     @media only screen and (max-width : 460px) {
-		line-height: (@font-swatch4-line-height * 0.8);
-		font-size: (@font-swatch5-font-size * 0.8);
+		line-height: bkscale(@font-swatch4-line-height, 0.8);
+		font-size: bkscale(@font-swatch5-font-size, 0.8);
 	}
 }
 
@@ -215,7 +215,7 @@
 		font-size: @font-swatch7-font-size;
 		font-weight: @font-swatch7-font-weight;
 
-		height: (@font-swatch7-font-size * 2.5 );
+		height: bkscale(@font-swatch7-font-size, 2.5 );
 		line-height: 1;
 
 		webkit-box-sizing: border-box;
@@ -223,8 +223,8 @@
 		box-sizing: border-box;
 
 		@media only screen and (max-width : 460px) {
-			font-size: (@font-swatch7-font-size * 0.75);
-			height: (@font-swatch7-font-size * 2);
+			font-size: bkscale(@font-swatch7-font-size, 0.75);
+			height: bkscale(@font-swatch7-font-size, 2);
 		}
 
 

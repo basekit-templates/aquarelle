@@ -6,7 +6,7 @@
 		li {
 			margin: 0 0.5em 1em;
 		}
-	}	
+	}
 }
 
 // ======= Widget: Menu
@@ -25,7 +25,7 @@
 		&:first-of-type {
 			margin-top: 0;
 		}
-		
+
 		@media @mobile {
 			padding-bottom: 20px;
 			margin-bottom: 20px;
@@ -41,8 +41,8 @@
 		text-align: left;
 		padding: 0;
 		position: relative;
-		
-		
+
+
 		.menu-name-background {
 			.menu-name {
 				.w_horizontal_spacing;
@@ -71,10 +71,10 @@
 		-webkit-column-count: 1;
 		text-align: left;
 		font-size: 1px;
-		
+
 	}
-	
-	
+
+
 	// MENU ITEM
 	.menu-item {
 		padding: 0;
@@ -115,10 +115,10 @@
 			background-color: @color-swatch2;
 			color: @color-swatch1;
 			@media @tablet {
-				font-size: (@font-swatch2-font-size * 0.8);
+				font-size: bkscale(@font-swatch2-font-size, 0.8);
 			}
 			@media @mobile {
-				font-size: (@font-swatch2-font-size * 0.7);
+				font-size: bkscale(@font-swatch2-font-size, 0.7);
 			}
 		}
 		// Image
@@ -128,7 +128,7 @@
 			height: 0;
 			padding-bottom: 60%;
 			background-position: center;
-				       
+
 			img {
 				display: none;
 			}
@@ -145,31 +145,31 @@
 				line-height: 3;
 			}
 		}
-	
+
 		// Description
 		.menu-item-description {
 			font-family:  @font-swatch5-font-family;
-			font-size: (@font-swatch5-font-size * 1);
-			
-			
+			font-size: bkscale(@font-swatch5-font-size, 1);
+
+
 		}
 
 		// Nutritions
 		.menu-item-nutritional-title {
 			color: @color-swatch2;
-			font-size: (@font-swatch5-font-size * 0.8);
+			font-size: bkscale(@font-swatch5-font-size, 0.8);
 			font-family:  @font-swatch5-font-family;
 			line-height: 1.2;
 		}
 
 		.menu-item-nutritional-prop, .menu-section-item-dietary-props {
-			font-size: (@font-swatch5-font-size * 0.8);
+			font-size: bkscale(@font-swatch5-font-size, 0.8);
 			font-family:  @font-swatch5-font-family;
 			line-height: 1.4;
 		}
 
 		.menu-item-nutritional-prop {
-			
+
 		}
 
 		// Dietary props
@@ -192,9 +192,9 @@
 		&.menu-item-promoted {
 			padding-bottom: 1.4em;
 			.menu-item-name {
-				
+
 			}
-		}	
+		}
 	}
 	// ---- Sub Section
 	.menu-subsection {
@@ -208,7 +208,7 @@
 			.menu-subsection-header {
 				margin-bottom: 3em;
 				text-align: left;
-								
+
 				.menu-subsection-name {
 					.w_horizontal_spacing;
 					margin-top: 10px;
@@ -222,8 +222,8 @@
 					margin-bottom: 0;
 
 					@media @mobile {
-						font-size: (@font-swatch2-font-size * 0.6);	
-						line-height: (@font-swatch2-line-height * 0.6);	
+						font-size: bkscale(@font-swatch2-font-size, 0.6);
+						line-height: bkscale(@font-swatch2-line-height, 0.6);
 						margin-top: 0;
 					}
 				}
@@ -231,7 +231,7 @@
 					.w_horizontal_spacing;
 					display: block;
 					background-color: lighten(@color-swatch1, 15%);
-					font-size: (@font-swatch5-font-size * 0.88);
+					font-size: bkscale(@font-swatch5-font-size, 0.88);
 					padding-top: 1em;
 					padding-bottom: 1em;
 				}
@@ -247,14 +247,14 @@
 					column-count: 1;
 				}
 			}
-			
+
 			// Promoted sub section items
 			&.menu-subsection-promoted {
 				border: 2px solid @color-swatch2;
 
 				.menu-subsection-header {
 					.menu-subsection-name {
-						
+
 						position: relative;
 					}
 				}
@@ -263,7 +263,7 @@
 
 						// Title
 						.menu-item-name {
-							
+
 						}
 						// Price
 						.menu-item-price {
@@ -284,12 +284,12 @@
 							margin-left: 0;
 						}
 						.menu-item-nutritional-prop {
-							
+
 						}
 					}
-				}		
+				}
 			}
-		
+
 			// Normal sub section items
 			.menu-items {
 				padding: 0;
@@ -308,18 +308,18 @@
 					vertical-align: top;
 					// Title
 					.menu-item-name {
-						font-size: (@font-swatch2-font-size * 0.8);
-						line-height: (@font-swatch2-line-height * 0.5);
+						font-size: bkscale(@font-swatch2-font-size, 0.8);
+						line-height: bkscale(@font-swatch2-line-height, 0.5);
 						@media @tablet {
-							font-size: (@font-swatch2-font-size * 0.8);
-							line-height: (@font-swatch2-line-height * 0.8);
+							font-size: bkscale(@font-swatch2-font-size, 0.8);
+							line-height: bkscale(@font-swatch2-line-height, 0.8);
 						}
 						@media @mobile {
-							font-size: (@font-swatch3-font-size * 0.7);
-							line-height: (@font-swatch2-line-height * 0.7);
+							font-size: bkscale(@font-swatch3-font-size, 0.7);
+							line-height: bkscale(@font-swatch2-line-height, 0.7);
 						}
 					}
-				
+
 					// Price
 					.menu-item-price {
 						.standard-price {
@@ -327,7 +327,7 @@
 							position: relative;
 						}
 					}
-				
+
 					// Description
 					.menu-item-description {
 						.w_vertical_spacing;
@@ -342,7 +342,7 @@
 						margin-left: 0;
 					}
 					.menu-item-nutritional-prop {
-						
+
 					}
 				}
 			}
